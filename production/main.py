@@ -5,14 +5,9 @@ import board
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.scanners.keypad import KeysScanner
 from kmk.keys import KC
-from kmk.modules.macros import Press, Release, Tap, Macros
 
 # This is the main instance of your keyboard
 keyboard = KMKKeyboard()
-
-# Add the macro extension
-macros = Macros()
-keyboard.modules.append(macros)
 
 # Define your pins here!
 PINS = [board.D3, board.D4, board.D2, board.D1, board.D0, board.D7]
